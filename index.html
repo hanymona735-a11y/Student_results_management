@@ -1,13 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student System</title>
+    <title>Student Results Management System</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #263b63;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #263b63;
+            margin-top: 25px;
+        }
+
+        #results {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #263b63;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f5fa;
+        }
+
+        .summary {
+            background: #eef3fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Student Management System</h1>
+    <div class="container">
+
+        <h1>Student Results Management System</h1>
+
+        <h2>Students Results</h2>
+
+        <div id="results">
+            Loading student results...
+        </div>
+
+        <div id="statistics" class="summary"></div>
+
+    </div>
 
     <script src="script.js"></script>
 
